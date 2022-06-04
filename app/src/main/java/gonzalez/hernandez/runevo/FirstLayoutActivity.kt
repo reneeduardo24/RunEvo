@@ -10,9 +10,6 @@ class FirstLayoutActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first_layout)
 
-        supportActionBar?.hide()
-
-
         Handler().postDelayed({
             val intent = Intent(this@FirstLayoutActivity, iniciarSesion::class.java)
             startActivity(intent)

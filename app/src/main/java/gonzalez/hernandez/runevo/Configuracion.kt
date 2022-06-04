@@ -3,29 +3,27 @@ package gonzalez.hernandez.runevo
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageButton
-import gonzalez.hernandez.runevo.databinding.ActivityRegistrarseBinding
+import android.widget.TextView
+import gonzalez.hernandez.runevo.ui.perfil.PerfilFragment
 
-class RegistrarseActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityRegistrarseBinding
+class Configuracion : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_registrarse)
+        setContentView(R.layout.activity_configuracion)
 
         val imgDevolver = findViewById<ImageButton>(R.id.btnBackCreateA)
-        val btnRegistrarse = findViewById<Button>(R.id.btnRegistro)
+        val btnCerrarSesion = findViewById<TextView>(R.id.btn_cerrar_sesion)
 
         imgDevolver.setOnClickListener {
-            val lanzar = Intent(this, iniciarSesion::class.java)
+            val lanzar = Intent(this, PerfilFragment::class.java)
             startActivity(lanzar)
         }
 
-        btnRegistrarse.setOnClickListener{
+        btnCerrarSesion.setOnClickListener{
             val intent = Intent(this, iniciarSesion::class.java)
             this.startActivity(intent)
         }
-
     }
 }
