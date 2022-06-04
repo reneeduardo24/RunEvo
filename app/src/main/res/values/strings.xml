@@ -1,0 +1,16 @@
+<resources>
+
+    //nombres de clases
+    <string name="app_name">RunEvo</string>
+    <string name="title_trofeos">Trofeos</string>
+    <string name="title_carrera">Carrera</string>
+    <string name="title_perfil">Perfil</string>
+
+    //iniciar sesion
+    <string name="user">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="btn_iniciar_sesion">Iniciar Sesión</string>
+    <string name="btn_registrarse">Registrarse</string>
+
+
+</resources>
