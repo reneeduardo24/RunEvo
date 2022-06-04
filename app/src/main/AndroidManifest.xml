@@ -14,7 +14,11 @@
         android:theme="@style/Theme.RunEvo"
         tools:targetApi="31">
         <activity
+
+            android:name=".Configuracion"
+
             android:name=".ConfiguraPerfilActivity"
+
             android:exported="false" />
         <activity
             android:name=".RegistrarseActivity"
@@ -33,7 +37,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+ds        </activity>
     </application>
 
 </manifest>

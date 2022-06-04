@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
@@ -15,6 +16,7 @@ class RegistrarseActivity : AppCompatActivity() {
     }
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrarse)
@@ -23,10 +25,12 @@ class RegistrarseActivity : AppCompatActivity() {
         val btn_Registrar: Button = findViewById(R.id.btnRegistro)
         val imgDevolver = findViewById<ImageView>(R.id.btnBackCreateA)
 
+
         imgDevolver.setOnClickListener {
             val lanzar = Intent(this, iniciarSesion::class.java)
             startActivity(lanzar)
         }
+
 
         btn_Registrar.setOnClickListener {
             validaRegistro()
@@ -60,5 +64,6 @@ class RegistrarseActivity : AppCompatActivity() {
         } else {
             Toast.makeText(this, "Ingresar datos", Toast.LENGTH_SHORT).show()
         }
+
     }
 }
