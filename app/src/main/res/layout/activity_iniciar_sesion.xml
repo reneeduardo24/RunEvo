@@ -86,6 +86,20 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_password"
         app:layout_constraintVertical_bias="0.06" />
 
+    <TextView
+        android:id="@+id/txtOlvidaPass"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:gravity="center"
+        android:text="¿Olvidaste tu contrasena?"
+        android:textColor="#F6ECC8"
+        app:layout_constraintBottom_toTopOf="@+id/btn_iniciar_sesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password"
+        app:layout_constraintVertical_bias="0.533" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_iniciar_sesion"
         android:layout_width="250dp"
@@ -98,10 +112,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_password"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.366" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_registrarse"
