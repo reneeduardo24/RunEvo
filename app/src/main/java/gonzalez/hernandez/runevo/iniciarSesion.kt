@@ -19,6 +19,11 @@ class iniciarSesion : AppCompatActivity() {
             this.startActivity(intent)
         }
 
+        binding.btnRegistrarse.setOnClickListener{
+            val intent = Intent(this, RegistrarseActivity::class.java)
+            this.startActivity(intent)
+        }
+
 
 
     }
