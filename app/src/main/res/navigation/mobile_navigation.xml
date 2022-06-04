@@ -12,10 +12,22 @@
         tools:layout="@layout/fragment_trofeos" />
 
     <fragment
+        android:id="@+id/nav_comunidad"
+        android:name="gonzalez.hernandez.runevo.ui.comunidad.ComunidadFragment"
+        android:label="@string/title_comunidad"
+        tools:layout="@layout/fragment_comunidad" />
+
+    <fragment
         android:id="@+id/nav_carrera"
         android:name="gonzalez.hernandez.runevo.ui.carrera.CarreraFragment"
         android:label="@string/title_carrera"
         tools:layout="@layout/fragment_carrera" />
+
+    <fragment
+        android:id="@+id/nav_historial"
+        android:name="gonzalez.hernandez.runevo.ui.historial.HistorialFragment"
+        android:label="@string/title_historial"
+        tools:layout="@layout/fragment_historial" />
 
     <fragment
         android:id="@+id/nav_perfil"

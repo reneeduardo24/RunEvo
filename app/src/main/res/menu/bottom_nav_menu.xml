@@ -3,17 +3,29 @@
 
     <item
         android:id="@+id/nav_trofeos"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/toggle_trofeos"
         android:title="@string/title_trofeos" />
 
     <item
+        android:id="@+id/nav_comunidad"
+        android:icon="@drawable/toggle_comunidad"
+        android:title="@string/title_comunidad"/>
+
+    <item
         android:id="@+id/nav_carrera"
-        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:icon="@drawable/toggle_carrera"
         android:title="@string/title_carrera" />
 
     <item
+        android:id="@+id/nav_historial"
+        android:icon="@drawable/toggle_historial"
+        android:title="@string/title_historial"/>
+
+    <item
         android:id="@+id/nav_perfil"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_perfil" />
+        android:icon="@drawable/toggle_perfil"
+        android:title="@string/title_perfil"/>
+
+
 
 </menu>
