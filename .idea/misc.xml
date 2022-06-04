@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/drawable/bordes_redondos.xml" value="0.122" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/drawable/cuadrado_blanco.xml" value="0.122" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.122" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/drawable/ic_location_24.xml" value="0.122" />
         <entry key="..\:/GitHub/RunEvo/app/src/main/res/drawable/toggle_carrera.xml" value="0.1085" />
         <entry key="..\:/GitHub/RunEvo/app/src/main/res/drawable/toggle_comunidad.xml" value="0.2505" />
         <entry key="..\:/GitHub/RunEvo/app/src/main/res/drawable/toggle_historial.xml" value="0.2505" />
@@ -14,10 +18,13 @@
         <entry key="..\:/GitHub/RunEvo/app/src/main/res/layout/fragment_carrera.xml" value="0.36666666666666664" />
         <entry key="..\:/GitHub/RunEvo/app/src/main/res/layout/fragment_comunidad.xml" value="0.33" />
         <entry key="..\:/GitHub/RunEvo/app/src/main/res/layout/fragment_historial.xml" value="0.35260416666666666" />
-        <entry key="..\:/GitHub/RunEvo/app/src/main/res/layout/fragment_perfil.xml" value="0.36666666666666664" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/layout/fragment_perfil.xml" value="0.25" />
         <entry key="..\:/GitHub/RunEvo/app/src/main/res/layout/fragment_trofeos.xml" value="0.36666666666666664" />
         <entry key="..\:/GitHub/RunEvo/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/GitHub/RunEvo/app/src/main/res/mipmap-anydpi-v26/RunEvo.xml" value="0.1815" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2505" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/mipmap-anydpi-v26/ic_runevo_launcher.xml" value="0.122" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/mipmap-anydpi-v26/ic_runevo_launcher_round.xml" value="0.2505" />
         <entry key="..\:/GitHub/RunEvo/app/src/main/res/mipmap-anydpi-v26/runevo.xml" value="0.1815" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/RunEvo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2595" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/RunEvo/app/src/main/res/drawable/borders_redondos.xml" value="0.1" />
