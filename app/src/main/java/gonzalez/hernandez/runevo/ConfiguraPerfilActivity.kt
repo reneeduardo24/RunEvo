@@ -86,10 +86,11 @@ class ConfiguraPerfilActivity : AppCompatActivity() {
                 var correo = user!!.email
                 var contraseña = user!!.contraseña
                 var usuario = user?.usuario
+                var gmail = user?.email
 
                 val user = hashMapOf(
                     "usuario" to usuario,
-                    "email" to email,
+                    "email" to gmail,
                     "contraseña" to contraseña,
                     "perfiles" to perfiles)
 

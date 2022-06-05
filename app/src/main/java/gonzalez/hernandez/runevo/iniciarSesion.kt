@@ -4,12 +4,14 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Patterns
 import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import gonzalez.hernandez.runevo.databinding.ActivityIniciarSesionBinding
 import com.google.firebase.ktx.Firebase
+import java.util.regex.Pattern
 
 class iniciarSesion : AppCompatActivity() {
     companion object {
@@ -48,6 +50,11 @@ class iniciarSesion : AppCompatActivity() {
 
     }
 
+    private fun validarEmail(email: String): Boolean {
+        val pattern: Pattern = Patterns.EMAIL_ADDRESS
+        return pattern.matcher(email).matches()
+    }
+
     private fun validaSesion() {
         val et_correo: EditText = findViewById(R.id.et_user)
         val et_contra: EditText = findViewById(R.id.et_password)
@@ -58,6 +65,8 @@ class iniciarSesion : AppCompatActivity() {
         if(!correo.isNullOrBlank() && !contra.isNullOrBlank()){
             ingresaFirebase(correo,contra)
             email = correo
+        }else if(!validarEmail(correo)){
+            Toast.makeText(this, "Email no válido", Toast.LENGTH_SHORT).show()
         }else{
             Toast.makeText(this,"Ingresar datos", Toast.LENGTH_SHORT).show()
         }
@@ -71,7 +80,7 @@ class iniciarSesion : AppCompatActivity() {
                     val lanzar = Intent(this, MainActivity:: class.java)
                     startActivity(lanzar)
                 } else {
-                    Toast.makeText(baseContext, "Authentication failed.",
+                    Toast.makeText(baseContext, "Autenticacion fallida.",
                         Toast.LENGTH_SHORT).show()
                 }
             }

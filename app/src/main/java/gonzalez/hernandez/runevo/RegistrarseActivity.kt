@@ -1,13 +1,15 @@
 package gonzalez.hernandez.runevo
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Patterns
 import android.widget.Button
-
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import java.util.regex.Pattern
+
 
 class RegistrarseActivity : AppCompatActivity() {
 
@@ -53,11 +55,13 @@ class RegistrarseActivity : AppCompatActivity() {
 
         if (!correo.isNullOrBlank() && !contra.isNullOrBlank() && !contra2.isNullOrBlank()) {
 
-            if(contra == contra2){
-                user = User(usuario,correo,contra,null,)
+            if(contra == contra2 && validarEmail(correo)){
+                user = User(usuario,correo,contra,null)
                 val lanzar = Intent(this, ConfiguraPerfilActivity:: class.java)
                 startActivity(lanzar)
-            } else{
+            }else if(!validarEmail(correo)){
+                Toast.makeText(this, "Email no válido", Toast.LENGTH_SHORT).show()
+            }else{
                 Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show()
             }
 
@@ -65,5 +69,10 @@ class RegistrarseActivity : AppCompatActivity() {
             Toast.makeText(this, "Ingresar datos", Toast.LENGTH_SHORT).show()
         }
 
+    }
+
+    private fun validarEmail(email: String): Boolean {
+        val pattern: Pattern = Patterns.EMAIL_ADDRESS
+        return pattern.matcher(email).matches()
     }
 }
