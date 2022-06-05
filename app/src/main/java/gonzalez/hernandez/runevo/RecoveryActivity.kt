@@ -1,40 +1,45 @@
 package gonzalez.hernandez.runevo
 
+import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.swiperefreshlayout.widget.CircularProgressDrawable
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import gonzalez.hernandez.runevo.databinding.ActivityIniciarSesionBinding
+import gonzalez.hernandez.runevo.databinding.ActivityRecoveryBinding
 
 class RecoveryActivity : AppCompatActivity() {
 
-    val fs = Firebase.firestore
-
-    companion object {
-        var correo: String? = null
-        var usuario: String? = null
-    }
+    private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var binding: ActivityRecoveryBinding
+    private lateinit var progressDialog: ProgressDialog
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recovery)
+        binding = ActivityRecoveryBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val btnChecar = findViewById<Button>(R.id.btnRecuperar)
+        //Init firebase auth
+        firebaseAuth = FirebaseAuth.getInstance()
 
-        btnChecar.setOnClickListener{
-            val et_usuario: EditText = findViewById(R.id.txtUsuario)
+        //Init /setup progress dialog
+        progressDialog = ProgressDialog(this)
+        progressDialog.setTitle("Por favor espere.")
+        progressDialog.setCanceledOnTouchOutside(false)
 
-            usuario = et_usuario.text.toString()
 
-            if(!usuario.isNullOrBlank()){
-                checarCorreo()
-            }else{
-                Toast.makeText(this,"Ingresar datos", Toast.LENGTH_SHORT).show()
-            }
+        //SetOnClickListener
+        binding.btnRecuperar.setOnClickListener{
+            validateData()
         }
 
         val imgDevolver = findViewById<ImageView>(R.id.btnBackRec)
@@ -45,17 +50,39 @@ class RecoveryActivity : AppCompatActivity() {
         }
     }
 
-    fun checarCorreo(){
-        fs.collection("users").whereEqualTo("usuario", usuario).get().addOnSuccessListener { documents ->
-            for(document in documents){
-                correo = document.get("email") as String?
-            }
+    private var email = ""
+    private fun validateData() {
+        //get data
+        email = binding.txtUsuario.text.toString().trim()
 
-            val lanzar = Intent(this, RecoveryPassActivity:: class.java)
-            startActivity(lanzar)
+        //validate data
+        if(email.isEmpty()){
+            Toast.makeText(this, "Ingresa email...", Toast.LENGTH_SHORT).show()
+        }else if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+
+            Toast.makeText(this, "Email invalido...", Toast.LENGTH_SHORT).show()
+        }else{
+            recoverPassword()
         }
-            .addOnFailureListener{
-                Toast.makeText(this,"El usuario no es correcto!",Toast.LENGTH_SHORT).show()
+    }
+
+    private fun recoverPassword() {
+        //show progress
+        progressDialog.setMessage("Enviando instrucciones para recuperar.")
+        progressDialog.show()
+
+        firebaseAuth.sendPasswordResetEmail(email)
+            .addOnSuccessListener {
+                //sent
+                progressDialog.dismiss()
+                Toast.makeText(this, "Instrucciones mandadas a " + email, Toast.LENGTH_SHORT).show()
+                val lanzar = Intent(this, iniciarSesion::class.java)
+                startActivity(lanzar)
+            }
+            .addOnFailureListener {
+                //failed
+                progressDialog.dismiss()
+                Toast.makeText(this, "Fallo al enviar el correo", Toast.LENGTH_SHORT).show()
             }
     }
 }

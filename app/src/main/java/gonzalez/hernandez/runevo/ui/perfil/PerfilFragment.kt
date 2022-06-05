@@ -38,7 +38,6 @@ class PerfilFragment : Fragment() {
                         perfil as HashMap<String, Any>
                         var nombrepf = perfil.get("nombre")
 
-                        (activity as? MainActivity)?.changeEditText()
                         Toast.makeText(activity,"Si entra " + nombrepf,Toast.LENGTH_SHORT).show();
                         binding.txtPerfilName.text = nombrepf.toString()
                     }

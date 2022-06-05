@@ -36,7 +36,7 @@
         android:fontFamily="@font/alt_sweat_font"
         android:textColor="@color/white"
         android:layout_marginHorizontal="35dp"
-        android:text="¡No te preocupes! Escribe tu usuario para recuperarla"
+        android:text="¡No te preocupes! Escribe tu email para recuperarla"
         />
 
     <EditText
@@ -46,12 +46,12 @@
         android:layout_marginTop="70dp"
         android:layout_gravity="center"
         android:background="@drawable/bordes_redondos"
-        android:hint="Usuario"
+        android:hint="Email"
         android:paddingStart="30dp"
         android:textColorHint="@color/gris"
         android:textColor="@color/gris"
         android:fontFamily="@font/alt_sweat_font"
-        android:drawableEnd="@drawable/ic_user_24"
+        android:drawableEnd="@drawable/ic_baseline_email_24"
         android:paddingEnd="20dp"
         android:inputType="textPersonName" />
 
