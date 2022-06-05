@@ -21,21 +21,21 @@
         app:layout_constraintVertical_bias="0.05" />
 
     <TextView
-        android:id="@+id/tv_user"
+        android:id="@+id/tv_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/ic_user_24"
+        android:drawableStart="@drawable/ic_baseline_email_24"
         android:drawablePadding="10dp"
         android:fontFamily="@font/alt_sweat_font"
-        android:text="@string/user"
+        android:text="Correo Electronico"
         android:textColor="@color/gris"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintVertical_bias="0.069" />
 
     <EditText
         android:id="@+id/et_user"
@@ -44,13 +44,13 @@
         android:background="@drawable/bordes_redondos"
         android:textColor="@color/gris"
         android:paddingStart="10dp"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:fontFamily="@font/alt_sweat_font"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_user"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email"
         app:layout_constraintVertical_bias="0.04" />
 
     <TextView
@@ -87,11 +87,11 @@
         app:layout_constraintVertical_bias="0.06" />
 
     <TextView
-        android:id="@+id/txtOlvidaPass"
+        android:id="@+id/txt_olvida_pass"
         android:layout_width="wrap_content"
         android:layout_height="27dp"
         android:gravity="center"
-        android:text="¿Olvidaste tu contrasena?"
+        android:text="¿Olvidaste tu contraseña?"
         android:textColor="#F6ECC8"
         app:layout_constraintBottom_toTopOf="@+id/btn_iniciar_sesion"
         app:layout_constraintEnd_toEndOf="parent"

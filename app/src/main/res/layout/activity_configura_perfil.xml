@@ -24,7 +24,7 @@
         android:text="Configura tu perfil"
         android:fontFamily="@font/alt_sweat_font"
         android:textColor="@color/white"
-        android:layout_marginLeft="30dp"
+        android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:textSize="25sp" />
 
@@ -36,7 +36,10 @@
         android:layout_marginTop="200dp"
         android:background="@drawable/bordes_redondos"
         android:textColorHint="@color/gris"
-        android:hint="    Nombre"
+        android:paddingStart="20dp"
+        android:textColor="@color/gris"
+        android:fontFamily="@font/alt_sweat_font"
+        android:hint="Nombre"
         android:inputType="textPersonName" />
 
     <TextView
@@ -75,6 +78,9 @@
         android:layout_marginRight="10dp"
         android:background="@drawable/bordes_redondos"
         android:text="0"
+        android:paddingTop="8dp"
+        android:fontFamily="@font/alt_sweat_font"
+        android:textColor="@color/gris"
         android:layout_gravity="center"
         android:textAlignment="center"
         android:textSize="20sp" />
