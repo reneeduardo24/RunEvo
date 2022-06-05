@@ -13,6 +13,8 @@
     <string name="contraseña">Contraseña</string>
     <string name="btn_iniciar_sesion">Iniciar Sesión</string>
     <string name="btn_registrarse">Registrarse</string>
+    <string name="btn_recuperar">Recuperar</string>
+    <string name="btn_restablecer">Restablecer</string>
 
     //Perfil
     <string name="perfil">Perfil</string>
@@ -21,7 +23,7 @@
     <string name="tipoCuenta">Premium</string>
     <string name="antiguedadCuenta">Miembro premium desde 2022</string>
     <string name="btnConfiguracion">Configuración</string>
-    
+
     //Configuracion
     <string name="configuracion">Configuración</string>
     <string name="editar_perfil">Editar perfil</string>

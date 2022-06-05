@@ -39,6 +39,11 @@ class iniciarSesion : AppCompatActivity() {
             this.startActivity(intent)
         }
 
+        binding.txtOlvidaPass.setOnClickListener{
+            val lanzar = Intent(this, RecoveryActivity:: class.java)
+            startActivity(lanzar)
+        }
+
 
 
     }
