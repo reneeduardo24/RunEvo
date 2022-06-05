@@ -22,9 +22,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¡Hola!"
+        android:layout_gravity="center_horizontal"
         android:fontFamily="@font/alt_sweat_font"
         android:textColor="@color/white"
-        android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:textSize="25sp" />
 
@@ -37,6 +37,8 @@
         android:background="@drawable/bordes_redondos"
         android:hint="Nueva contraseña"
         android:paddingStart="30dp"
+        android:textColor="@color/gris"
+        android:textColorHint="@color/gris"
         android:fontFamily="@font/alt_sweat_font"
         android:drawableEnd="@drawable/toggle_visibility"
         android:paddingEnd="20dp"
@@ -48,6 +50,8 @@
         android:layout_height="55dp"
         android:layout_marginTop="24dp"
         android:layout_gravity="center"
+        android:textColor="@color/gris"
+        android:textColorHint="@color/gris"
         android:background="@drawable/bordes_redondos"
         android:hint="Repetir contraseña"
         android:paddingStart="30dp"

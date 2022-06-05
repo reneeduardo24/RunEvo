@@ -3,6 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/drawable/toggle_perfil.xml" value="0.2505" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/drawable/toggle_visibility.xml" value="0.2505" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/layout/activity_configura_perfil.xml" value="0.36666666666666664" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/layout/activity_configuracion.xml" value="0.33" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/layout/activity_first_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/layout/activity_iniciar_sesion.xml" value="0.36666666666666664" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/layout/activity_recovery.xml" value="0.36666666666666664" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/layout/activity_recovery_pass.xml" value="0.36666666666666664" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/layout/activity_registrarse.xml" value="0.33" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/layout/fragment_carrera.xml" value="0.36666666666666664" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/layout/fragment_historial.xml" value="0.36666666666666664" />
+        <entry key="..\:/GitHub/RunEvo/app/src/main/res/layout/fragment_perfil.xml" value="0.20606884057971014" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/RunEvo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2595" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/RunEvo/app/src/main/res/drawable/borders_redondos.xml" value="0.1" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/RunEvo/app/src/main/res/drawable/boton_redondo_gris.xml" value="0.214" />
@@ -27,13 +40,9 @@
         <entry key="..\:/Users/Rene Hernandez/Desktop/RunEvo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.353" />
         <entry key="..\:/Users/Rene Hernandez/Desktop/RunEvo/app/src/main/res/drawable/ic_password_24.xml" value="0.353" />
         <entry key="..\:/Users/Rene Hernandez/Desktop/RunEvo/app/src/main/res/drawable/ic_user_24.xml" value="0.353" />
-        <entry key="..\:/Users/Rene Hernandez/Desktop/RunEvo/app/src/main/res/layout/activity_configura_perfil.xml" value="0.3625" />
-        <entry key="..\:/Users/Rene Hernandez/Desktop/RunEvo/app/src/main/res/layout/activity_configuracion.xml" value="0.3625" />
         <entry key="..\:/Users/Rene Hernandez/Desktop/RunEvo/app/src/main/res/layout/activity_first_layout.xml" value="0.3614583333333333" />
         <entry key="..\:/Users/Rene Hernandez/Desktop/RunEvo/app/src/main/res/layout/activity_iniciar_sesion.xml" value="0.3625" />
         <entry key="..\:/Users/Rene Hernandez/Desktop/RunEvo/app/src/main/res/layout/activity_main.xml" value="0.3625" />
-        <entry key="..\:/Users/Rene Hernandez/Desktop/RunEvo/app/src/main/res/layout/activity_recovery.xml" value="0.3625" />
-        <entry key="..\:/Users/Rene Hernandez/Desktop/RunEvo/app/src/main/res/layout/activity_recovery_pass.xml" value="0.3625" />
         <entry key="..\:/Users/Rene Hernandez/Desktop/RunEvo/app/src/main/res/layout/activity_registrarse.xml" value="0.3625" />
         <entry key="..\:/Users/Rene Hernandez/Desktop/RunEvo/app/src/main/res/layout/fragment_carrera.xml" value="0.3625" />
         <entry key="..\:/Users/Rene Hernandez/Desktop/RunEvo/app/src/main/res/layout/fragment_comunidad.xml" value="0.3625" />
