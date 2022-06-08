@@ -1,45 +1,15 @@
 <resources>
-
-    //nombres de clases
     <string name="app_name">RunEvo</string>
-    <string name="title_trofeos">Trofeos</string>
-    <string name="title_comunidad">Comunidad</string>
-    <string name="title_carrera">Carrera</string>
-    <string name="title_historial">historial</string>
-    <string name="title_perfil">Perfil</string>
-
-    //iniciar sesion
-    <string name="user">Usuario</string>
-    <string name="contraseña">Contraseña</string>
-    <string name="btn_iniciar_sesion">Iniciar Sesión</string>
-    <string name="btn_registrarse">Registrarse</string>
-    <string name="btn_recuperar">Recuperar</string>
-    <string name="btn_restablecer">Restablecer</string>
-
-    //Perfil
-    <string name="perfil">Perfil</string>
-    <string name="nomUsuario">Elliud Kipchoge</string>
-    <string name="dir_usuario">Cd. Obregón, Son.</string>
-    <string name="tipoCuenta">Premium</string>
-    <string name="antiguedadCuenta">Miembro premium desde 2022</string>
-    <string name="btnConfiguracion">Configuración</string>
-
-    //Configuracion
-    <string name="configuracion">Configuración</string>
-    <string name="editar_perfil">Editar perfil</string>
-    <string name="correo_e">Correo electrónico</string>
-    <string name="num_celular">Número de celular</string>
-    <string name="unidad_medida">Unidades de medida</string>
-    <string name="config_carrera">Configuración de la carrera</string>
-    <string name="vinculacion">Vinculación con otras apps</string>
-    <string name="smart_watch">Vinculación con SmartWatch</string>
-    <string name="notificaciones">Notificaciones</string>
-    <string name="privacidad">Privacidad</string>
-    <string name="version">Versión</string>
-    <string name="terminos_de_uso">Términos de uso</string>
-    <string name="contacto">Contacto</string>
-    <string name="pais">País/Región</string>
-    <string name="idioma">Idioma</string>
-    <string name="cerrar_sesion">Cerrar sesión</string>
-
+    <string-array name="filter_options">
+        <item>Date</item>
+        <item>Running Time</item>
+        <item>Distance</item>
+        <item>Average Speed</item>
+        <item>Calories Burned</item>
+    </string-array>
+    <string name="settings">Settings</string>
+    <string name="statistics">Statistics</string>
+    <string name="your_runs">Your Runs</string>
+    <string name="cancel_tracking">Cancel Run</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDUWgI3L_aSqhzz40-sU_i76oTbIwOd0ak</string>
 </resources>
