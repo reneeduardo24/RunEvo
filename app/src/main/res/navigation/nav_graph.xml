@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
     app:startDestination="@id/setupFragment">
 
     <action android:id="@+id/action_global_trackingFragment"
@@ -39,4 +41,14 @@
         android:id="@+id/settingsFragment"
         android:name="com.hernandez.runevo.ui.fragments.SettingsFragment"
         android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/trofeosFragment"
+        android:name="com.hernandez.runevo.ui.fragments.TrofeosFragment"
+        android:label="fragment_trofeos"
+        tools:layout="@layout/fragment_trofeos" />
+    <fragment
+        android:id="@+id/comunidadFragment"
+        android:name="com.hernandez.runevo.ui.fragments.ComunidadFragment"
+        android:label="fragment_comunidad"
+        tools:layout="@layout/fragment_comunidad" />
 </navigation>

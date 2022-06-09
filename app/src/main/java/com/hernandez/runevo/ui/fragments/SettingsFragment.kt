@@ -1,17 +1,20 @@
 package com.hernandez.runevo.ui.fragments
 
+import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.hernandez.runevo.R
 import com.hernandez.runevo.databinding.FragmentSettingsBinding
 import com.hernandez.runevo.util.Constants.KEY_NAME
 import com.hernandez.runevo.util.Constants.KEY_WEIGHT
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textview.MaterialTextView
+import com.hernandez.runevo.Configuration
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -24,13 +27,15 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
     private var _binding: FragmentSettingsBinding? = null
     private val binding get() = _binding!!
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        val bind = FragmentSettingsBinding.inflate(layoutInflater)
 
         _binding = FragmentSettingsBinding.inflate(inflater, container, false)
+
+        bind.tvConfig.setOnClickListener {
+            val intent = Intent(this@SettingsFragment.requireContext(), Configuration::class.java)
+            startActivity(intent)
+        }
 
         return binding.root
     }

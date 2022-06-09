@@ -6,6 +6,147 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/alt_sweat_font"
+            android:text="Perfil"
+            android:textAlignment="center"
+            android:textColor="@color/gris"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cuadrado_claro"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="104dp"
+        tools:ignore="MissingConstraints">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/foto_perfil"
+            app:civ_border_color="@color/verde_oscuro"
+            app:civ_border_width="3dp" />
+
+        <TextView
+            android:id="@+id/txtPerfilName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/alt_sweat_font"
+            android:text="Hola"
+            android:textColor="@color/oscuro"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/dir_usuario"
+            android:textColor="@color/oscuro"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_location_24"
+            app:drawableTint="@color/gris_oscuro" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_letras" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="363dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alt_sweat_font"
+                android:text="Cuenta"
+                android:textColor="@color/gris"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/premium_32" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/alt_sweat_font"
+                android:text="@string/tipoCuenta"
+                android:textColor="@color/gris"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/antiguedadCuenta"
+                android:textColor="@color/gris"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilName"
         android:layout_width="wrap_content"
@@ -49,7 +190,7 @@
         android:id="@+id/btnApplyChanges"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="18dp"
         android:text="Apply Changes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,6 +201,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
+        app:layout_constraintGuide_percent="0.85" />
+
+    <TextView
+        android:id="@+id/tv_config"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_baseline_settings_24"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/alt_sweat_font"
+        android:paddingStart="10dp"
+        android:text="@string/btnConfiguracion"
+        android:textAllCaps="false"
+        android:textColor="@color/gris"
+        android:textSize="22sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="325dp"
+        tools:layout_editor_absoluteY="475dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

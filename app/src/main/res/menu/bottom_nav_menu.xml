@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_trofeos"
+        android:icon="@drawable/toggle_trofeos"
+        android:title="@string/title_trofeos" />
+    <item
+        android:id="@+id/nav_comunidad"
+        android:icon="@drawable/toggle_comunidad"
+        android:title="@string/title_comunidad"/>
     <item
         android:id="@+id/runFragment"
         android:icon="@drawable/ic_run"

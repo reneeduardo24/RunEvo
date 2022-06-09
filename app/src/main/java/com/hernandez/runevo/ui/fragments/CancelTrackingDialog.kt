@@ -19,7 +19,7 @@ class CancelTrackingDialog : DialogFragment() {
             .setTitle("Cancelar la carrera?")
             .setMessage("Estas seguro de cancelar la carrera actual y borrar todos sus datos?")
             .setIcon(R.drawable.ic_delete)
-            .setPositiveButton("Yes") { _, _ ->
+            .setPositiveButton("Si") { _, _ ->
                 yesListener?.let { yes ->
                     yes()
                 }

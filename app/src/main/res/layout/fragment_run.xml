@@ -7,8 +7,8 @@
 
     <Spinner
         android:id="@+id/spFilter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="166dp"
+        android:layout_height="36dp"
         android:entries="@array/filter_options"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
@@ -19,7 +19,7 @@
         android:id="@+id/tvFilterBy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sort by:"
+        android:text="Ordenar por:"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/spFilter"
         app:layout_constraintEnd_toStartOf="@+id/spFilter"
