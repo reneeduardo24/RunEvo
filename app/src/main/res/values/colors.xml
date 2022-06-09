@@ -15,4 +15,12 @@
     <color name="md_blue_A700">#2962FF</color>
     <color name="colorAccent">#FFE600</color>
     <color name="errorColor">#D50000</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="oscuro">#1C1427</color>
+    <color name="verde_oscuro">#26B2A0</color>
+    <color name="verde_claro">#CCFFBD</color>
+    <color name="gris">#eeeeee</color>
+    <color name="gris_oscuro">#9f9f9f</color>
 </resources>

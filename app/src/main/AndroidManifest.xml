@@ -16,9 +16,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.hernandez.runevo.ui.MainActivity"
-            android:exported="true"
-            android:launchMode="singleTask">
+            android:name=".ui.RecoveryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.RegistrarseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.iniciarSesion"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.FirstLayoutActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,7 +39,7 @@
         </activity>
 
         <service
-            android:name="com.hernandez.runevo.service.TrackingService"
+            android:name=".service.TrackingService"
             android:foregroundServiceType="location" />
         <meta-data
             android:name="com.google.android.gms.version"
