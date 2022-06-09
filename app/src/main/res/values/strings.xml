@@ -1,7 +1,19 @@
 <resources>
+    <string name="app_name">RunEvo</string>
+    <string-array name="filter_options">
+        <item>Fecha</item>
+        <item>Tiempo Corrido</item>
+        <item>Distancia</item>
+        <item>Velocidad</item>
+        <item>Calorias Quemadas</item>
+    </string-array>
+    <string name="settings">Configuracion</string>
+    <string name="statistics">Estadisticas</string>
+    <string name="your_runs">Tus Carreras</string>
+    <string name="cancel_tracking">Cancelar Carrera</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDUWgI3L_aSqhzz40-sU_i76oTbIwOd0ak</string>
 
     //nombres de clases
-    <string name="app_name">RunEvo</string>
     <string name="title_trofeos">Trofeos</string>
     <string name="title_comunidad">Comunidad</string>
     <string name="title_carrera">Carrera</string>
@@ -22,7 +34,7 @@
     <string name="dir_usuario">Cd. Obregón, Son.</string>
     <string name="tipoCuenta">Premium</string>
     <string name="antiguedadCuenta">Miembro premium desde 2022</string>
-    <string name="btnConfiguracion">Configuración</string>
+    <string name="btnConfiguracion"></string>
 
     //Configuracion
     <string name="configuracion">Configuración</string>
@@ -41,5 +53,4 @@
     <string name="pais">País/Región</string>
     <string name="idioma">Idioma</string>
     <string name="cerrar_sesion">Cerrar sesión</string>
-
 </resources>

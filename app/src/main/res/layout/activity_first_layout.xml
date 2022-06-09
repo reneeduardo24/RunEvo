@@ -5,19 +5,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstLayoutActivity"
+    tools:context=".ui.FirstLayoutActivity"
     android:orientation="vertical"
     android:background="@color/oscuro">
 
-  <ImageView
-      android:id="@+id/btnPrueba"
-      android:layout_width="wrap_content"
-      android:layout_height="200dp"
-      android:layout_gravity="center"
-      android:src="@drawable/logo_runevo"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/btnPrueba"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_runevo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

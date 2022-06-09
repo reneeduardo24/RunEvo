@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.iniciarSesion"
+    android:background="@color/oscuro"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/logo_completo_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/alt_sweat_font"
+        android:text="Correo Electronico"
+        android:textColor="@color/gris"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bordes_redondos"
+        android:textColor="@color/gris"
+        android:paddingStart="10dp"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/alt_sweat_font"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_password_24"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/alt_sweat_font"
+        android:text="@string/contraseña"
+        android:textColor="@color/gris"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_user"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bordes_redondos"
+        android:textColor="@color/gris"
+        android:paddingStart="10dp"
+        android:inputType="textPassword"
+        android:fontFamily="@font/alt_sweat_font"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:id="@+id/txt_olvida_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:gravity="center"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textColor="#F6ECC8"
+        app:layout_constraintBottom_toTopOf="@+id/btn_iniciar_sesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_iniciar_sesion"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/boton_redondo_verde"
+        android:fontFamily="@font/alt_sweat_font"
+        android:text="@string/btn_iniciar_sesion"
+        android:textAllCaps="false"
+        android:textColor="@color/gris"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password"
+        app:layout_constraintVertical_bias="0.366" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_registrarse"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/boton_redondo_gris"
+        android:fontFamily="@font/alt_sweat_font"
+        android:text="@string/btn_registrarse"
+        android:textAllCaps="false"
+        android:textColor="@color/oscuro"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_iniciar_sesion"
+        app:layout_constraintVertical_bias="0.25" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
