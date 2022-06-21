@@ -29,10 +29,6 @@ class ComunidadFragment : Fragment() {
         _binding = FragmentComunidadBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textComunidad
-        comunidadViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
     }
 

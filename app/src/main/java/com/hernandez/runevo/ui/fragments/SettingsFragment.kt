@@ -15,6 +15,7 @@ import com.hernandez.runevo.util.Constants.KEY_WEIGHT
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textview.MaterialTextView
 import com.hernandez.runevo.Configuration
+import com.hernandez.runevo.util.Constants
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -32,10 +33,13 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
         _binding = FragmentSettingsBinding.inflate(inflater, container, false)
 
+        /* se guarda hasta que ponga boton de config de nuevo
         bind.tvConfig.setOnClickListener {
             val intent = Intent(this@SettingsFragment.requireContext(), Configuration::class.java)
             startActivity(intent)
         }
+        */
+
 
         return binding.root
     }
@@ -53,9 +57,11 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
         }
     }
 
+
     private fun loadFieldsFromSharedPref() {
         val name = sharedPreferences.getString(KEY_NAME, "")
         val weight = sharedPreferences.getFloat(KEY_WEIGHT, 80f)
+        binding.txtPerfilName.setText(name)
         binding.etName.setText(name)
         binding.etWeight.setText(weight.toString())
 

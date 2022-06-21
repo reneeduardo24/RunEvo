@@ -17,6 +17,7 @@
             android:id="@+id/action_runFragment_to_trackingFragment"
             app:destination="@id/trackingFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/setupFragment"
         android:name="com.hernandez.runevo.ui.fragments.SetupFragment"
@@ -25,10 +26,12 @@
             android:id="@+id/action_setupFragment_to_runFragment"
             app:destination="@id/runFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/statisticsFragment"
         android:name="com.hernandez.runevo.ui.fragments.StatisticsFragment"
         android:label="StatisticsFragment" />
+
     <fragment
         android:id="@+id/trackingFragment"
         android:name="com.hernandez.runevo.ui.fragments.TrackingFragment"
@@ -37,18 +40,19 @@
             android:id="@+id/action_trackingFragment_to_runFragment"
             app:destination="@id/runFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.hernandez.runevo.ui.fragments.SettingsFragment"
         android:label="SettingsFragment" />
-    <fragment
-        android:id="@+id/trofeosFragment"
-        android:name="com.hernandez.runevo.ui.fragments.TrofeosFragment"
-        android:label="fragment_trofeos"
-        tools:layout="@layout/fragment_trofeos" />
-    <fragment
-        android:id="@+id/comunidadFragment"
-        android:name="com.hernandez.runevo.ui.fragments.ComunidadFragment"
-        android:label="fragment_comunidad"
-        tools:layout="@layout/fragment_comunidad" />
+
+    <activity
+        android:id="@+id/trofeosActivity"
+        android:name="com.hernandez.runevo.ui.TrofeosActivity"
+        android:label="TrofeosActivity" />
+
+    <activity
+        android:id="@+id/comunidadActivity"
+        android:name="com.hernandez.runevo.ui.ComunidadActivity"
+        android:label="ComunidadActivity" />
 </navigation>

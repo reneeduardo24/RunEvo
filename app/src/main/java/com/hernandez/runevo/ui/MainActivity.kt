@@ -7,16 +7,21 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
+import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 import com.hernandez.runevo.R
+import com.hernandez.runevo.adapters.TrofeosPagerAdapter
 import com.hernandez.runevo.databinding.ActivityMainBinding
 import com.hernandez.runevo.util.Constants.ACTION_SHOW_TRACKING_FRAGMENT
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
 
+    private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -24,6 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         navController = findNavController(R.id.navHostFragment)
         navigateToTrackingFragmentIfNeeded(intent)
+
 
         setSupportActionBar(binding.toolbar)
 
@@ -34,12 +40,14 @@ class MainActivity : AppCompatActivity() {
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
-                R.id.settingsFragment, R.id.runFragment, R.id.statisticsFragment ->
+                R.id.settingsFragment, R.id.runFragment, R.id.statisticsFragment, R.id.comunidadActivity, R.id
+                    .trofeosActivity->
                     binding.bottomNavigationView.visibility = View.VISIBLE
                 else -> binding.bottomNavigationView.visibility = View.GONE
             }
 
         }
+
     }
 
     override fun onNewIntent(intent: Intent?) {
