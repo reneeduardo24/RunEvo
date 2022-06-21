@@ -21,9 +21,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¿Perdiste tu \n contrasena?"
+        android:layout_gravity="center"
         android:textColor="@color/white"
         android:fontFamily="@font/alt_sweat_font"
-        android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:textSize="25sp" />
 
@@ -32,10 +32,9 @@
         android:layout_width="201dp"
         android:layout_height="43dp"
         android:layout_marginTop="12dp"
-        android:layout_marginLeft="30dp"
+        android:layout_gravity="center"
         android:fontFamily="@font/alt_sweat_font"
         android:textColor="@color/white"
-        android:layout_marginHorizontal="35dp"
         android:text="¡No te preocupes! Escribe tu email para recuperarla"
         />
 
