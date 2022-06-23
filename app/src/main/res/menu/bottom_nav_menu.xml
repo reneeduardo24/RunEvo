@@ -3,23 +3,23 @@
 
 
     <item
-        android:id="@+id/trofeosActivity"
+        android:id="@+id/nav_trofeos"
         android:icon="@drawable/toggle_trofeos"
         android:title="@string/title_trofeos" />
     <item
-        android:id="@+id/comunidadActivity"
+        android:id="@+id/nav_comunidad"
         android:icon="@drawable/toggle_comunidad"
         android:title="@string/title_comunidad"/>
     <item
         android:id="@+id/runFragment"
-        android:icon="@drawable/toggle_carrera"
-        android:title="@string/title_carrera" />
+        android:icon="@drawable/ic_run"
+        android:title="@string/your_runs" />
     <item
         android:id="@+id/statisticsFragment"
-        android:icon="@drawable/toggle_historial"
-        android:title="@string/title_registro" />
+        android:icon="@drawable/ic_graph"
+        android:title="@string/statistics" />
     <item
         android:id="@+id/settingsFragment"
-        android:icon="@drawable/toggle_perfil"
-        android:title="@string/title_perfil" />
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings" />
 </menu>

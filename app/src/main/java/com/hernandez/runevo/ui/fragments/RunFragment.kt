@@ -93,15 +93,12 @@ class RunFragment : Fragment(R.layout.fragment_run), EasyPermissions.PermissionC
         }
     }
 
-
     private fun setUpToolbar() {
         val name = sharedPreferences.getString(Constants.KEY_NAME, "")
         val toolbarText = "Vamos, $name!"
         (requireActivity().findViewById(R.id.tvToolbarTitle) as MaterialTextView?)?.text =
             toolbarText
     }
-
-
 
     private fun requestPermissions() {
         if (TrackingUtility.hasLocationPermission(requireContext())) {

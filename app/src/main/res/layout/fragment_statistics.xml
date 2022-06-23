@@ -52,7 +52,7 @@
         android:id="@+id/tvTotalCaloriesInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calorías Quemadas"
+        android:text="Total De Dalorias Quemadas"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="@+id/tvTotalCalories"
         app:layout_constraintHorizontal_bias="0.5"
