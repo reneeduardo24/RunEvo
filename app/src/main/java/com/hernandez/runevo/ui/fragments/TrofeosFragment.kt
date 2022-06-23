@@ -11,6 +11,7 @@ import com.hernandez.runevo.databinding.FragmentTrofeosBinding
 import com.hernandez.runevo.ui.TrofeosViewModel
 
 class TrofeosFragment : Fragment() {
+
     private var _binding: FragmentTrofeosBinding? = null
 
     // This property is only valid between onCreateView and
@@ -27,10 +28,13 @@ class TrofeosFragment : Fragment() {
 
         _binding = FragmentTrofeosBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        val textView: TextView = binding.textTrofeos
+        trofeosViewModel.text.observe(viewLifecycleOwner) {
+            textView.text = it
+        }
         return root
     }
-
-
 
     override fun onDestroyView() {
         super.onDestroyView()
