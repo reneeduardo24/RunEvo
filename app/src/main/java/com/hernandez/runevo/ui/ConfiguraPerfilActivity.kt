@@ -2,10 +2,10 @@ package com.hernandez.runevo.ui
 
 import android.content.ContentValues
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.*
-import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FieldValue
@@ -15,7 +15,7 @@ import com.hernandez.runevo.R
 import com.hernandez.runevo.ui.RegistrarseActivity.Companion.user
 import com.hernandez.runevo.ui.iniciarSesion.Companion.email
 
-class ConfiguraPerfilActivity : AppCompatActivity(){
+class ConfiguraPerfilActivity : AppCompatActivity() {
     var perfiles = ArrayList<Perfil>()
     private lateinit var auth: FirebaseAuth
 
