@@ -11,7 +11,15 @@ import com.hernandez.runevo.util.TrackingUtility
 import com.bumptech.glide.Glide
 import java.text.SimpleDateFormat
 import java.util.*
-
+/**
+ * Clase que permite visualizar las carreras en un RecyclerView
+ * @property calendar recibe el tiempo y lo almacena.
+ * @property dateFormat de la formato al tiempo en dd/mm/yy.
+ * @property avgSpeed almacena la velocidad a la que se recorrio en la ultima carrera registrada
+ * @property distanceInKm almacena la distancia que se recorrio en la ultima carrera registrada
+ * @property caloriesBurned almacena las calorias quemadas que se registro en la ultima carrera
+ * @param onBindViewHolder funcion que acomoda las carreras registradas de manera descendiente.
+ **/
 class RunAdapter : RecyclerView.Adapter<RunAdapter.RunViewHolder>() {
     inner class RunViewHolder(val binding: ItemRunBinding) :
         RecyclerView.ViewHolder(binding.root) {

@@ -14,6 +14,12 @@ import com.hernandez.runevo.R
 import com.hernandez.runevo.databinding.ActivityLoginBinding
 import java.util.regex.Pattern
 
+/**
+ * validarEmail Valida que el email ingresado en el campo correspondiente a su layout sea correcto y este registrado a la base de datos.
+ * validaSesion Valida el inicio se sesion conforme la contrasena y el email registrados en la base de datos
+ * ingresaFirebase Da acceso a la firebase si la validacion es correcta
+ */
+
 class iniciarSesion : AppCompatActivity() {
     companion object {
         var email: String? = null

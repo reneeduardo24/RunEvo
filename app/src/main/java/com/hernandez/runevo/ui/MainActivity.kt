@@ -51,5 +51,6 @@ class MainActivity : AppCompatActivity() {
         if (intent?.action == ACTION_SHOW_TRACKING_FRAGMENT) {
             navController.navigate(R.id.action_global_trackingFragment)
         }
+
     }
 }
